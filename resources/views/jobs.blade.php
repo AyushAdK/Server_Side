@@ -5,6 +5,8 @@
             <li>
                 <a href="/jobs/{{ $job->id }}">
                     <strong>{{ $job->title }}</strong> - ${{ $job->salary }}
+                    <br>
+                    <small>Employer: {{ $job->employer->name }}</small>
                 </a>
             </li>
         @endforeach
